@@ -1,0 +1,59 @@
+---
+layout: default
+title: Home
+nav_home: true
+permalink: /
+---
+
+<header class="hero">
+  <div class="intro">
+    <h1>{{ site.author.name_en }} <span class="zh" lang="zh">{{ site.author.name_zh }}</span></h1>
+    <p>
+      I am an Assistant Professor at the <a href="https://fin.sufe.edu.cn/">School of Finance</a>,
+      Shanghai University of Finance and Economics (SUFE). My research interests lie in
+      development economics, public economics, and political economy. Currently, my research
+      focuses on the topic of institution. Drawing on theoretical insights from public,
+      development, and international economics, I employ novel datasets and empirical designs
+      to understand the evolution of institution building, the impacts of institutional design,
+      and the interaction between informal and formal institutions.
+    </p>
+    <p>
+      I received a Ph.D. in Economics from the Guanghua School of Management, Peking University
+      in 2025; an M.A. (all but degree) in Environmental Science from the College of
+      Environmental Sciences and Engineering, Peking University in 2022; and a B.S. in Economics
+      from the School of Economics, Huazhong University of Science and Technology in 2020.
+    </p>
+    <p class="contact">
+      liuchenhao [at] sufe.edu.cn
+      &nbsp;/&nbsp;
+      <span>CV (PDF)</span>
+      &nbsp;/&nbsp;
+      <a href="{{ site.author.sufe_url }}">SUFE faculty page</a>
+    </p>
+    <p class="contact">{{ site.author.office }}</p>
+  </div>
+  <img class="portrait" src="{{ '/images/avatar.jpeg' | relative_url }}" alt="Portrait of {{ site.author.name_en }}">
+</header>
+
+<section class="band" id="research">
+  <h2>Research</h2>
+  <p class="lede">Selected publications. * denotes corresponding author.</p>
+  {% for pub in site.data.publications %}
+  <article class="pub" id="{{ pub.id }}">
+    <p class="ptitle">{{ pub.title }}</p>
+    <span class="authors">{{ pub.authors }}</span>
+    <span class="venue">{{ pub.venue | markdownify | strip }}</span>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="band" id="honors">
+  <h2>Honors</h2>
+  <div class="cv-block">
+    <ul>
+      {% for item in site.data.awards %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
