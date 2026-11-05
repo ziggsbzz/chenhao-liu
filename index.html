@@ -54,9 +54,24 @@ permalink: /
   {% endfor %}
 </section>
 
-<section class="band" id="honors">
-  <h2>Honors</h2>
+<section class="band" id="other">
+  <h2>Other</h2>
   <div class="cv-block">
+    <h3>Field Surveys</h3>
+    <ul>
+      {% for item in site.data.surveys %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Grants</h3>
+    <ul>
+      {% for item in site.data.grants %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Honors</h3>
     <ul>
       {% for item in site.data.awards %}
       <li>{{ item }}</li>
