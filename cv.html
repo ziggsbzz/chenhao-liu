@@ -6,51 +6,6 @@ permalink: /cv/
 ---
 
 <h1 class="pagehead">Curriculum Vitae</h1>
-<p class="lede"><a href="https://drive.google.com/file/d/1nx5RsGiYY2pCDQBZA0qdq6-1SM0M5avL/view?usp=sharing">CV</a> (PDF on Google Drive)</p>
-
 <div class="cv-block">
-  <h3>Education</h3>
-  <ul>
-    <li>Ph.D., Economics, Guanghua School of Management, Peking University, 2025</li>
-    <li>M.A. (all but degree), Environmental Science, College of Environmental Sciences and Engineering, Peking University, 2022</li>
-    <li>B.S., Economics, School of Economics, Huazhong University of Science and Technology, 2020</li>
-  </ul>
-
-  <h3>Position</h3>
-  <ul>
-    <li>Assistant Professor, School of Finance, Shanghai University of Finance and Economics</li>
-  </ul>
-
-  <h3>Fields of interest</h3>
-  <p>Public Economics, Development Economics, Political Economy, Law and Finance</p>
-
-  <h3>Publications</h3>
-  <ul>
-    {% for pub in site.data.publications %}
-    <li>
-      {{ pub.authors }}. &ldquo;{{ pub.title }}.&rdquo; {{ pub.venue | markdownify | strip }}.
-    </li>
-    {% endfor %}
-  </ul>
-
-  <h3>Field surveys</h3>
-  <ul>
-    {% for item in site.data.surveys %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-
-  <h3>Awards &amp; honors</h3>
-  <ul>
-    {% for item in site.data.awards %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-
-  <h3>Contact</h3>
-  <p>
-    Email: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><br>
-    {{ site.author.office }}<br>
-    <a href="{{ site.author.sufe_url }}">SUFE faculty page</a>
-  </p>
+  <p><a href="https://drive.google.com/file/d/1nx5RsGiYY2pCDQBZA0qdq6-1SM0M5avL/view?usp=sharing">CV (PDF)</a></p>
 </div>
