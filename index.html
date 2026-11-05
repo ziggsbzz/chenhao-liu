@@ -41,7 +41,13 @@ permalink: /
   <p class="lede">Selected publications. * denotes corresponding author.</p>
   {% for pub in site.data.publications %}
   <article class="pub" id="{{ pub.id }}">
-    <p class="ptitle">{{ pub.title }}</p>
+    <p class="ptitle">
+      {% if pub.url %}
+      <a href="{{ pub.url }}">{{ pub.title }}</a>
+      {% else %}
+      {{ pub.title }}
+      {% endif %}
+    </p>
     <span class="authors">{{ pub.authors }}</span>
     <span class="venue">{{ pub.venue | markdownify | strip }}</span>
   </article>
