@@ -1,0 +1,29 @@
+title: Chenhao Liu
+description: >-
+  Chenhao Liu (刘宸昊), Assistant Professor at the School of Finance,
+  Shanghai University of Finance and Economics. Development economics,
+  public economics, and political economy.
+url: ""
+baseurl: ""
+lang: en
+
+author:
+  name_en: Chenhao Liu
+  name_zh: 刘宸昊
+  email: liuchenhao@sufe.edu.cn
+  affiliation: >-
+    Assistant Professor, School of Finance, Shanghai University of Finance
+    and Economics (SUFE)
+  office: "Room 226, Yuxiu Building (毓秀楼 226)"
+  sufe_url: https://fin.sufe.edu.cn/Faculty/Resume/liu_chenhao
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .ruby-version
+
+plugins:
+  - jekyll-sitemap
