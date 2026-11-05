@@ -49,6 +49,6 @@ Optional: set `JEKYLL_ENV=production`.
 - Profile text and publications from `academic-profile.md` (no fabricated entries).
 - Email: liuchenhao@sufe.edu.cn (no phone on site).
 - SUFE faculty page: https://fin.sufe.edu.cn/Faculty/Resume/liu_chenhao
-- **CV (PDF)** is a placeholder until a file is uploaded to the repo.
+- CV linked on the homepage (Google Drive).
 
 Edit `_data/publications.yml`, `_data/awards.yml`, and `_config.yml` to update the site.
